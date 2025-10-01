@@ -1,24 +1,23 @@
-import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import { NavLink } from 'react-router-dom';
-import { Button } from '@mui/material';
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import "./header.css";
 
 const Header = () => {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Bangladesh KickFighter Karate Schoole
-        </Typography>
-        <Button color="inherit" component={NavLink} to="/">Home</Button>
-        <Button color="inherit" component={NavLink} to="/about">About</Button>
-        <Button color="inherit" component={NavLink} to="/classes">Classes</Button>
-        <Button color="inherit" component={NavLink} to="/instructors">Instructors</Button>
-        <Button color="inherit" component={NavLink} to="/contact">Contact</Button>
-      </Toolbar>
-    </AppBar>
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="shadow">
+      <Navbar.Brand href="/">🏆 Bangladesh KickFighter Karate Schoole</Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbar-nav" />
+      <Navbar.Collapse id="navbar-nav">
+        <Nav className="ml-auto">
+          <NavLink exact to="/" activeClassName="active-link" className="nav-link">Home</NavLink>
+          <NavLink to="/about" activeClassName="active-link" className="nav-link">About</NavLink>
+          <NavLink to="/classes" activeClassName="active-link" className="nav-link">Classes</NavLink>
+          <NavLink to="/instructors" activeClassName="active-link" className="nav-link">Instructors</NavLink>
+          <NavLink to="/contact" activeClassName="active-link" className="nav-link">Contact</NavLink>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 

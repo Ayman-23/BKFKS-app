@@ -1,0 +1,26 @@
+.about-section {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #111, #222);
+    color: white;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+  .about-text {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-carousel img {
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  

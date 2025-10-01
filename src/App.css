@@ -3,7 +3,7 @@
 /* Full-page background for the app */
 .App {
   min-height: 100vh; /* full viewport height */
-  background-image: url('https://t4.ftcdn.net/jpg/10/35/43/09/360_F_1035430978_LAhgsUdqj3Mp4AhuZ16oDDu7xwFPe5kH.jpg');
+  background-image: url('https://t3.ftcdn.net/jpg/07/20/49/52/360_F_720495246_ElJ8FvZPniE4oOQ0t1ejVt1uhDZxsGBz.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,3 +23,8 @@ header, footer {
   z-index: 10;
   position: relative;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+

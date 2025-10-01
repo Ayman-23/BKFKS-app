@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header.jsx';
 import Footer from './components/footer.jsx';
 import Home from './components/home.jsx';
-// import About from './components/About.jsx';
+import About from './components/about.jsx';
 import Classes from './components/classes.jsx';
 import Instructors from './components/instructors.jsx';
 // import Contact from './components/Contact.jsx';
@@ -17,7 +17,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<About />} /> */}
+            <Route path="/about" element={<About />} />
             <Route path="/classes" element={<Classes />} />
             <Route path="/instructors" element={<Instructors />} />
             {/* <Route path="/contact" element={<Contact />} /> */}

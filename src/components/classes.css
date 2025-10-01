@@ -1,0 +1,33 @@
+.classes-section {
+    padding: 80px 20px;
+    background: url("https://cdn.pixabay.com/photo/2016/11/29/09/32/martial-arts-1868500_960_720.jpg") no-repeat center center/cover;
+    color: white;
+    text-align: center;
+  }
+  
+  .classes-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  }
+  
+  .schedule-table {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+  }
+  
+  /* Force all table text to white */
+  .schedule-table th,
+  .schedule-table td {
+    color: white !important;
+  }
+  
+  .table-header {
+    font-weight: bold;
+    color: #ff4444 !important;
+    font-size: 1.1rem;
+  }
+  
