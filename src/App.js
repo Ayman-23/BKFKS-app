@@ -6,6 +6,8 @@ import Home from './components/home.jsx';
 import About from './components/about.jsx';
 import Classes from './components/classes.jsx';
 import Instructors from './components/instructors.jsx';
+import TrainingVideos from "./components/trainingVideos";
+
 // import Contact from './components/Contact.jsx';
 import './App.css';
 
@@ -20,6 +22,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/classes" element={<Classes />} />
             <Route path="/instructors" element={<Instructors />} />
+            <Route path="/videos" element={<TrainingVideos />} />
             {/* <Route path="/contact" element={<Contact />} /> */}
           </Routes>
           <Footer />
