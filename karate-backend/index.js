@@ -4,16 +4,16 @@ require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const authRoutes = require("./routes/authRoutes");
 
-app.use("/api/auth", authRoutes);
-
-
-// Middleware
+// Middleware (MUST come first)
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// Auth Routes
+const authRoutes = require("./routes/authRoutes");
+app.use("/api/auth", authRoutes);
+
+// Other Routes
 const classesRoutes = require("./routes/classesRoutes");
 const instructorsRoutes = require("./routes/instructorsRoutes");
 const videosRoutes = require("./routes/videosRoutes");
